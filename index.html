@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="salutation.css"> -->
+    <title>Medi By The_Bit - Welcome</title>
+    <style>
+        @keyframes blink {
+            0% { opacity: 0; }
+            20% { opacity: 0.2; }
+            60% { opacity: 0.4; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+            animation: blink 1s linear 1;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 0px 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            margin-left: 75px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #7f8c8d;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Service Powered</h1>
+        <h2>by The_Bit</h2>
+        <p>Get Information according to your convenience!</p>
+        <button class="btn" onclick="getNxt_pg()">Explore our services</button>
+    </div>
+
+    <script>
+        function getNxt_pg() {
+            window.location.href = 'index2.html'; // Change to your actual file name
+        }
+    </script>
+</body>
+</html>
